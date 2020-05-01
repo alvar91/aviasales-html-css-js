@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ависалес</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Авиасалес</h1>
+    <main>
+      <section class="wrapper">
+        <form class="form-search">
+          <div class="wrapper__search">
+            <div class="input" style="display: block;">
+              <label
+                >Откуда
+                <input type="text" class="input__cities-from" required />
+              </label>
+              <ul class="dropdown dropdown__cities-from"></ul>
+            </div>
+
+            <div class="input">
+              <label
+                >Куда
+                <input type="text" class="input__cities-to" required />
+              </label>
+              <ul class="dropdown dropdown__cities-to"></ul>
+            </div>
+
+            <div class="input input__cities-from">
+              <label
+                >Отправление
+                <input type="date" class="input__date-depart" required />
+              </label>
+            </div>
+          </div>
+
+          <div class="wrapper__button">
+            <button type="submit" class="button button__search">
+              <span class="button__search-text">Найти билеты</span>
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="wrapper">
+        <section
+          class="wrapper__ticket"
+          id="cheapest-ticket"
+          style="display: none;"
+        ></section>
+        <section
+          class="block__ticket"
+          id="other-cheap-tickets"
+          style="display: none;"
+        ></section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
